@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         DOTNET_CLI_HOME = "C:\\Program Files\\dotnet"
+         PATH = "${env.PATH};${DOTNET_CLI_HOME}"
     }
 
     stages {
